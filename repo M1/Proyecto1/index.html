@@ -1,17 +1,88 @@
-<!DOCTYPE html>
-<html lang="en">
 
+<section id="mis-actividades" style="margin:30px 0;">
+    <h2>Mis Actividades Favoritas</h2>
+
+    
+    <form id="form-actividad" style="display:flex;flex-direction:column;gap:10px;max-width:700px;">
+        <input id="title-input" type="text" placeholder="Título" />
+        <textarea id="description-input" rows="3" placeholder="Descripción"></textarea>
+        <input id="imgUrl-input" type="text" placeholder="URL de la imagen (ej. img/fibra.jpg)" />
+        <div style="display:flex;gap:10px;">
+            <button id="btn-add-actividad" type="submit">Agregar Actividad</button>
+            <span id="form-message" aria-live="polite" style="color:#c0392b;align-self:center;"></span>
+        </div>
+    </form>
+
+    <div id="activities-container" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:20px;">
+
+    </div>
+</section>
+<!DOCTYPE html>
+<html lang="es">
 <head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Mi Proyecto 1</title>
+    <title>Página Personal</title>
+
+    <style>
+        .titulo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .titulo img {
+            width: 60px;        
+            height: auto;       
+            border-radius: 50%; 
+        }
+    </style>
 </head>
-
 <body>
-    
-        <h1>Proyecto 1</h1>
-        
-</body>
 
+    <h1 class="titulo">
+        <img src="img/perfil.jpg" alt="Foto de perfil">
+        JUAN JOSE OVIEDO
+    </h1>
+
+    <p>Técnico de Fibra Óptica</p>
+
+    <hr>
+
+    <h2>Experiencia Laboral</h2>
+    <p>
+        Cuento con experiencia en instalaciones domiciliarias de FTTH, asegurando un servicio eficiente y de calidad al cliente final. 
+        Me desempeño también en trabajos de red externa, realizando fusiones de hilos de fibra óptica y tendidos de fibra troncal en 
+        capacidades desde 12 hasta 96 fibras, garantizando precisión y continuidad en la red. 
+        Mi versatilidad me permite adaptarme tanto a tareas técnicas de campo como a proyectos de expansión y mantenimiento de infraestructura.
+    </p>
+
+    <h2>Obras y Proyectos Realizados en Fibra Óptica</h2>
+    <ul>
+        <li><b>Extensión de red en zona norte de la ciudad:</b> despliegue de 8 km de fibra óptica con la instalación de 36 cajas NAP</li>
+        <li><b>Zona oeste de la ciudad:</b> tendido de 3 km de fibra óptica con la puesta en funcionamiento de 13 cajas NAP.</li>
+        <li><b>Conexión para empresas alejadas de la ciudad principal:</b> tendidos de aproximadamente 3 km de fibra óptica, garantizando conectividad estable en zonas rurales.</li>
+        <li><b>Proyecto para la empresa "Telco Red":</b> tendidos e instalación de piezos tecnológicos destinados a proveer internet a instituciones públicas y escuelas.</li>
+    </ul>
+
+    <h2>Datos Personales y de Contacto</h2>
+    <ul>
+        <li><b>Ciudad:</b> Goya, Corrientes</li>
+        <li><b>Teléfono:</b> <a href="https://wa.me/5493777590775" target="_blank">3777-590775</a></li>
+        <li><b>Dirección:</b> Rolón 3003</li>
+        <li><b>GitHub:</b> <a href="https://github.com/chp999" target="_blank">chp999</a></li>
+    </ul>
+
+    <hr>
+
+    <h2>Redes Sociales</h2>
+    <ul>
+        <li><a href="https://www.instagram.com/chapayin?igsh=bXBidG53NmpqZ3Bl" target="_blank">Instagram</a></li>
+        <li><a href="https://www.facebook.com/share/1CC9VVmB4Q/" target="_blank">Facebook</a></li>
+        <li><a href="https://wa.me/5493777590775" target="_blank">WhatsApp</a></li>
+    </ul>
+
+    <!-- 👇 Vinculación con tu archivo JavaScript -->
+    <script src="scripts/index.js"></script>
+</body>
 </html>

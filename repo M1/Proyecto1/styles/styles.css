@@ -1,0 +1,161 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: #2c2c2c;
+    background-image: url('img/fondo3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 0;
+}
+
+body > * {
+    position: relative;
+    z-index: 1;
+    backdrop-filter: blur(3px);
+}
+
+
+header, main, footer {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+header {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #1a73e8;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.titulo img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 3px solid #1a73e8;
+    box-shadow: 0 0 8px rgba(26, 115, 232, 0.3);
+}
+
+header h1 {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #1a73e8;
+}
+
+header p {
+    color: #555;
+    font-size: 1.1em;
+    margin-top: 5px;
+}
+
+
+main {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 30px;
+    border-radius: 12px;
+    margin-top: 25px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.08);
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #1a73e8;
+    border-bottom: 2px solid #1a73e8;
+    padding-bottom: 6px;
+    margin-bottom: 12px;
+    font-size: 1.4em;
+}
+
+p {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+
+ul {
+    list-style-type: square;
+    margin-left: 25px;
+    color: #333;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+
+a {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0c56c9;
+}
+
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 25px 0;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 40px;
+    padding: 20px 0;
+    border-top: 1px solid #ccc;
+}
+
+
+@media (max-width: 600px) {
+    .titulo {
+        flex-direction: column;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+}
