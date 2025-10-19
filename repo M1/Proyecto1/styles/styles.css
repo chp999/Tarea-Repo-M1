@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 
 * {
     margin: 0;
@@ -16,7 +16,7 @@ body {
     background-repeat: no-repeat;
     line-height: 1.6;
     min-height: 100vh;
-=======
+
 body {
     font-family: 'Arial', sans-serif;
     color: #333;
@@ -28,14 +28,14 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
->>>>>>> 65660859e8d21a3124b3dcd9d61a3ead1cbb7101
+
 }
 
 
 body::before {
     content: "";
     position: fixed;
-<<<<<<< HEAD
+
     inset: 0;
     background-color: rgba(255, 255, 255, 0.9);
     z-index: 0;
@@ -153,48 +153,47 @@ h2 {
     border-bottom: 2px solid #1a73e8;
     padding-bottom: 5px;
     margin-top: 20px;
->>>>>>> 65660859e8d21a3124b3dcd9d61a3ead1cbb7101
-}
+
 
 
 ul {
     list-style-type: square;
-<<<<<<< HEAD
+
     margin-left: 25px;
     color: #333;
 }
 
 li {
     margin-bottom: 8px;
-=======
+
     margin-left: 20px;
->>>>>>> 65660859e8d21a3124b3dcd9d61a3ead1cbb7101
+
 }
 
 
 a {
     color: #1a73e8;
     text-decoration: none;
-<<<<<<< HEAD
+
     font-weight: 500;
     transition: all 0.2s ease;
-=======
->>>>>>> 65660859e8d21a3124b3dcd9d61a3ead1cbb7101
+
+
 }
 
 a:hover {
     text-decoration: underline;
-<<<<<<< HEAD
+
     color: #0c56c9;
-=======
+
 >>>>>>> 65660859e8d21a3124b3dcd9d61a3ead1cbb7101
 }
 
 
 hr {
     border: none;
-<<<<<<< HEAD
-    border-top: 1px solid #ddd;
+
+    border-top: 1px solid #247e12;
     margin: 25px 0;
 }
 
@@ -204,7 +203,7 @@ footer {
     color: #666;
     margin-top: 40px;
     padding: 20px 0;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #cccccc65;
 }
 
 
@@ -225,8 +224,8 @@ footer {
         font-size: 1.2em;
     }
 }
-=======
-    border-top: 1px solid #ccc;
+
+    border-top: 1px solid #0f034652;
     margin: 20px 0;
 }
->>>>>>> 65660859e8d21a3124b3dcd9d61a3ead1cbb7101
+
